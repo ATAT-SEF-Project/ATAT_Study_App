@@ -1,0 +1,137 @@
+Create teacher account
+Primary actor: Teacher
+
+Main success scenario:
+1. User opens login GUI
+2. User selects create account
+3. User selects teacher role
+4. User inputs username and password
+5. System verifies that username and password are valid
+6. System stores new teacher account
+
+Extension:
+In 5 verification fails:
+1. System displays relevant error message
+2. User inputs new username and password
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Create student account
+Primary actor: Student
+
+Main success scenario:
+1. User opens login GUI
+2. User selects create account
+3. User selects student role
+4. User inputs username and password
+5. System verifies that username and password are valid
+6. System stores new student account
+
+Extension:
+In 5 verification fails:
+1. System displays relevant error message
+2. User inputs new username and password
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Login
+Primary actor: Teacher, Student
+1. User opens login GUI
+2. User selects login
+3. User inputs username and password
+4. System verifies username and password
+5. System provides necessary access (Teacher / Student)
+
+Extension:
+In 4 verification fails:
+1. System displays relevant error message
+2. User inputs again username and password
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Show all teachers
+Primary actor: Student
+Secondary actor: Teacher
+
+Main success scenario:
+1. User will open a separate GUI
+2. User will be able to filter based on some criteria (e.g. subject)
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Create class
+Primary actor: Teacher
+Secondary actor: Student
+
+Main success scenario:
+1. Teacher will input a class name
+2. Teacher will be able to view a list of Students
+3. Teacher will be able to select students to add to a class
+4. System will add selected students to given class
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Add tutorial
+Primary actor: Teacher
+Secondary actor: Student
+
+Main success scenario:
+1. Teacher will be able to add text to a file
+2. Teacher will be able to format text
+3. System will save file and store it
+4. System will make the file available to the Students
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Watch Tutorial
+Primary actor: Student
+Secondary actor: Teacher
+
+Main success scenario:
+1. Student will be able to see a list of available tutorials
+2. Student will be able to select a tutorial
+3. System will open a tutorial GUI
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Create test
+Primary actor: Teacher
+Secondary actor: Student
+
+Main success scenario:
+1. Teacher will be able to add questions to a file
+2. Teacher will be able to add set wrong and right answers
+3. System will store questions and answers
+4. System will make questions available to Students
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Take test
+Primary actor: Student
+Secondary actor: Teacher
+
+Main success scenario:
+1. Student will be able to access questions
+2. Student will be able to input answers
+3. System will compare given answers to stored ones
+4. System will tally and store a score based on correct answers
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Show class results
+Primary actor: Teacher
+
+Main success scenario:
+1. Teacher will be able to input a class name
+2. Teacher will be able to see a list of all students in the class and their averages in the given class
+3. Teacher will be able to select a student and see the scores from the given class
+4. Teacher will be able to give feedback on a certain test for the selected student
+
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Show student results
+Primary actor: Student
+
+Main success scenario:
+1. Student will be able to see all test scores
+2. Student will be able to see a list of classes they are in and the average for each class
