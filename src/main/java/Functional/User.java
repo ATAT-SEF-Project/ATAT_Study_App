@@ -21,8 +21,10 @@ public class User implements Jsonable {
     public String type() { return this.type; }
 
     public User find() {
-        if (AllUsers.UserList.contains(this.email))
-            return this;
+        for (User search : AllUsers.UserList) {
+            if (search.equals(this))
+                return search;
+        }
         return null;
     }
 
@@ -30,8 +32,27 @@ public class User implements Jsonable {
         AllUsers.addUser(this);
     }
 
+    private boolean checkString(String str) {
+        return str.length() > 10 && str.length() < 40;
+    }
+
+    public boolean checkMail() {
+        return checkString(this.email) && this.email.contains("@");
+    }
+
+    public boolean checkPassword() {
+        return checkString(this.password);
+    }
+
     public String toString() {
         return "User:\n" + "\tmail: " + email + "\n\tpassword: " + password + "\n\ttype: " + type;
+    }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof User) {
+            return this.email.equals(((User) obj).email());
+        }
+        return false;
     }
 
     @Override
