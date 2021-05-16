@@ -42,11 +42,12 @@ public class StartController extends GeneralController{
         }
         else {
             User search = user.find();
+            user.hashPassword();
             if (search == null) {
                 outputLabel.setText("No such user!");
                 outputLabel.setTextFill(Color.rgb(255, 10, 10));
             }
-            else if (!search.password().equals(password)) {
+            else if (!search.password().equals(user.password())) {
                 outputLabel.setText("Wrong password!");
                 outputLabel.setTextFill(Color.rgb(255, 10, 10));
             }
