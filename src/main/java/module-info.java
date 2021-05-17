@@ -5,6 +5,7 @@ module ATAT.Study.App {
     requires javafx.web;
     requires javafx.fxml;
     requires json.simple;
+    
     exports main;
     exports Canvas;
 }
