@@ -1,1 +1,17 @@
-[{"password":"\/��(�q�@���I�o��4��lD��6\n?��\u0006`�d,�,ւ\n4��\u001A?�|g�\u001F�W�_�q��\u0017|�\u001BЧ","type":"Teacher","email":"demo@gmail.com"},{"password":"\u0006�\u0004Mi\u0001�)i�^��0ź�I���\n�\u0012\u000E�<\u000EM��a_f�^\u001C?�\f�Q�\u0012�996��ȘXr\/N�\u0000ߛ\u0001�3","type":"Teacher","email":"demo2@gmail.com"}]
+[
+  {
+    "password": "\/��(�q�@���I�o��4��lD��6\n?��\u0006`�d,�,ւ\n4��\u001A?�|g�\u001F�W�_�q��\u0017|�\u001BЧ",
+    "type": "Teacher",
+    "email": "demo@gmail.com"
+  },
+  {
+    "password": "\u0006�\u0004Mi\u0001�)i�^��0ź�I���\n�\u0012\u000E�<\u000EM��a_f�^\u001C?�\f�Q�\u0012�996��ȘXr\/N�\u0000ߛ\u0001�3",
+    "type": "Teacher",
+    "email": "demo2@gmail.com"
+  },
+  {
+    "password": "�O@��|�\u0006�\u001D��N��f�, +\u0012>���7�%q�p�Zܚ�N\u0018��_\u0005-5\u0001<�.�\u0016\\\u0016���׹�5\u0018\u001B\u001F",
+    "type": "Student",
+    "email": "student@demo.com"
+  }
+]
