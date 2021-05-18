@@ -1,5 +1,6 @@
 package Controllers;
 
+import Functional.AllUsers;
 import Functional.User;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -52,10 +53,12 @@ public class StartController extends GeneralController{
                 outputLabel.setTextFill(Color.rgb(255, 10, 10));
             }
             else {
+                AllUsers.current_user = search;
                 outputLabel.setText("Success!");
                 outputLabel.setTextFill(Color.rgb(10, 255, 10));
-                if (search.type().equals("Student"))
+                if (AllUsers.current_user.type().equals("Student"))
                     changeWindow(loginButton, "StudentWindow.fxml", 1200, 800);
+                changeWindow(loginButton, "TeacherWindow.fxml", 1200, 800);
             }
         }
     }

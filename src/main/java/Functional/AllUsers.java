@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class AllUsers {
+    public static User current_user;
     public static ArrayList<User> UserList = new ArrayList<>();
     public static ArrayList<User> TeacherList = new ArrayList<>();
     public static ArrayList<User> StudentList = new ArrayList<>();
