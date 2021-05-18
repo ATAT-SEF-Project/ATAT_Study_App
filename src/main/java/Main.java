@@ -18,19 +18,10 @@ public class Main extends Application {
         AllUsers.initialize();
         URL resource = getClass().getClassLoader().getResource("StartWindow.fxml");
         if (resource != null) {
-            System.out.println("Hmmmmmmmm");
-            FXMLLoader loader = new FXMLLoader(resource);
-            Parent start_layout = loader.load(resource);
-            System.out.println("Hmmmmmmmm");
+            Parent start_layout = FXMLLoader.load(resource);
             primaryStage.setTitle("Study App");
-            System.out.println("Hmmmmmmmm");
             primaryStage.setScene(new Scene(start_layout, 600, 400));
             primaryStage.show();
-        }
-        else
-        {
-            System.out.println("F*ck");
-            System.exit(-1);
         }
     }
 }
