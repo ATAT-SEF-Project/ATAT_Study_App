@@ -16,7 +16,7 @@ public class AllUsers {
     public static ArrayList<User> UserList = new ArrayList<>();
     public static ArrayList<User> TeacherList = new ArrayList<>();
     public static ArrayList<User> StudentList = new ArrayList<>();
-    private static ArrayList<String> Types = new ArrayList<>(Arrays.asList("Teacher", "Student", "none"));
+    public static ArrayList<String> Types = new ArrayList<>(Arrays.asList("Teacher", "Student", "none"));
 
     public static void initialize() {
         try {

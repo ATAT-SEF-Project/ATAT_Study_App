@@ -1,5 +1,6 @@
 package Controllers;
 
+import Functional.AllUsers;
 import Functional.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,9 +25,11 @@ public class RegisterController extends GeneralController{
     private Label outputLabel;
 
     public void initialize() {
-        choiceBox.getItems().add("Teacher");
-        choiceBox.getItems().add("Student");
-        choiceBox.setValue("Teacher");
+        for (String type : AllUsers.Types) {
+            if (!type.equals("none"))
+                choiceBox.getItems().add(type);
+        }
+        choiceBox.setValue(AllUsers.Types.get(0));
         choiceBox.setStyle("-fx-font: 14px \"System\";");
     }
 

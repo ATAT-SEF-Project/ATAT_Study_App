@@ -54,6 +54,8 @@ public class StartController extends GeneralController{
             else {
                 outputLabel.setText("Success!");
                 outputLabel.setTextFill(Color.rgb(10, 255, 10));
+                if (search.type().equals("Student"))
+                    changeWindow(loginButton, "StudentWindow.fxml", 1200, 800);
             }
         }
     }
