@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddClassController">
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane pickOnBounds="false" prefHeight="60.0" prefWidth="2000.0" style="-fx-background-color: #8080FF;" />
+            </children></AnchorPane>
+    </top>
+   <left>
+        <AnchorPane prefHeight="220.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="39.0" layoutY="102.0" prefHeight="30.0" prefWidth="120.0" text="Classroom name:">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <TextField fx:id="classField" layoutX="159.0" layoutY="102.0" prefHeight="30.0" prefWidth="400.0" />
+                <Label fx:id="outputLabel" alignment="CENTER" layoutX="39.0" layoutY="25.0" prefHeight="30.0" prefWidth="521.0" text="Create ClassRoom" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="createButton" layoutX="50.0" layoutY="220.0" mnemonicParsing="false" onAction="#createButtonOnAction" prefHeight="50.0" prefWidth="500.0" text="Create">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="exitButton" cancelButton="true" defaultButton="true" layoutX="50.0" layoutY="280.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="50.0" prefWidth="500.0" text="Cancel">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+   </left>
+</BorderPane>

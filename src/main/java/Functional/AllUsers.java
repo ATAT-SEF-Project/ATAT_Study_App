@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Vector;
 
 public class AllUsers {
     public static User current_user;
@@ -18,6 +19,7 @@ public class AllUsers {
     public static ArrayList<User> TeacherList = new ArrayList<>();
     public static ArrayList<User> StudentList = new ArrayList<>();
     public static ArrayList<String> Types = new ArrayList<>(Arrays.asList("Teacher", "Student", "none"));
+    public static ArrayList<ClassRoom> ClassRoomList = new ArrayList<>();
 
     public static void initialize() {
         try {
@@ -45,6 +47,10 @@ public class AllUsers {
         TeacherList.clear();
     }
 
+    public static void clearAllClassRooms() {
+        ClassRoomList.clear();
+    }
+
     public static void addToList(User user) {
         if (!UserList.contains(user) && Types.contains(user.type())) {
             UserList.add(user);
@@ -52,6 +58,14 @@ public class AllUsers {
             addStudent(user);
         }
     }
+
+    public static void addToClassList(ClassRoom className) {
+        if (!ClassRoomList.contains(className))
+        {
+            ClassRoomList.add(className);
+        }
+    }
+
 
     public static void addTeacher(User user) {
         if (user.type().equals("Teacher") && !TeacherList.contains(user)) {
