@@ -32,7 +32,7 @@ public class AddClassController extends GeneralController{
 
         if(classRoomName != null) {
             DirectoryController dir = new DirectoryController();
-            String username = AllUsers.current_user.email;
+            String username = AllUsers.current_user.email();
             dir.create("Teachers/" + username + "/" + classRoomName);
 
             outputLabel.setText("Classroom created!");
