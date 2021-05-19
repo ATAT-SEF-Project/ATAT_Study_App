@@ -426,7 +426,7 @@ public class CanvasApp extends Application {
         pane.setLeft(btns);
         pane.setCenter(canvas);
 
-        Scene scene = new Scene(pane, 600, 400);
+        Scene scene = new Scene(pane, 1200, 800);
 
         primaryStage.setTitle("Paint");
         primaryStage.setScene(scene);

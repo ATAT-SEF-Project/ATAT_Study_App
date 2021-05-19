@@ -2,21 +2,31 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TeacherController">
     <left>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="createTutorialButton" layoutX="10.0" layoutY="26.0" mnemonicParsing="false" onAction="#createTutorialButtonOnAction" prefHeight="50.0" prefWidth="180.0" text="Create Tutorial" />
-                <Button fx:id="exitButton" layoutX="10.0" layoutY="144.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="50.0" prefWidth="180.0" text="Exit" />
-                <Button fx:id="showClassesButton" layoutX="10.0" layoutY="86.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" text="My Classes" />
+                <Button fx:id="createTutorialButton" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#createTutorialButtonOnAction" prefHeight="50.0" prefWidth="180.0" text="Create Tutorial">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+                <Button fx:id="exitButton" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="50.0" prefWidth="180.0" text="Exit">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+                <Button fx:id="showClassesButton" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" onAction="#showClassesOnAction" prefHeight="50.0" prefWidth="180.0" text="My Classes">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
             </children>
         </AnchorPane>
     </left>
     <top>
         <AnchorPane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
-                <Pane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #8080FF;" />
+                <Pane pickOnBounds="false" prefHeight="100.0" prefWidth="2000.0" style="-fx-background-color: #8080FF;" />
             </children>
         </AnchorPane>
     </top>

@@ -53,12 +53,17 @@ public class StartController extends GeneralController{
                 outputLabel.setTextFill(Color.rgb(255, 10, 10));
             }
             else {
-                AllUsers.current_user = search;
                 outputLabel.setText("Success!");
                 outputLabel.setTextFill(Color.rgb(10, 255, 10));
+                AllUsers.current_user = search;
+                System.out.println(AllUsers.current_user.type());
                 if (AllUsers.current_user.type().equals("Student"))
                     changeWindow(loginButton, "StudentWindow.fxml", 1200, 800);
-                changeWindow(loginButton, "TeacherWindow.fxml", 1200, 800);
+                else {
+                    DirectoryController dir = new DirectoryController();
+                    dir.create("Teachers/" + username);
+                    changeWindow(loginButton, "TeacherWindow.fxml", 1200, 800);
+                }
             }
         }
     }

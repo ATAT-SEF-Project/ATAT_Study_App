@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegisterController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegisterController">
    <center>
       <AnchorPane prefHeight="220.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -53,7 +53,7 @@
    <top>
       <AnchorPane prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #8080FF;" />
+            <Pane prefHeight="60.0" prefWidth="2000.0" style="-fx-background-color: #8080FF;" />
          </children></AnchorPane>
    </top>
 </BorderPane>

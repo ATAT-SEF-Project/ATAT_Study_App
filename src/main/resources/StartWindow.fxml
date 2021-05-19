@@ -44,7 +44,7 @@
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #8080FF;" />
+            <Pane pickOnBounds="false" prefHeight="2000.0" prefWidth="200.0" style="-fx-background-color: #8080FF;" />
          </children></AnchorPane>
    </right>
 </BorderPane>
