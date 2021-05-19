@@ -36,7 +36,7 @@ public class AddStudentController extends GeneralController{
         User user = new User(studentName, "", "none");
         User search = user.find();
 
-        String username = AllUsers.current_user.email;
+        String username = AllUsers.current_user.email();
 
         if(classRoomName != null && search != null && search.type() != "Teacher")
         {
